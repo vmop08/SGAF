@@ -1,0 +1,32 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="conteudo">
+	
+		<h1>Emitir Relatórios</h1>
+		<p><label>Selecione o tipo de Relatório a ser gerado:</label></p>
+		
+		<INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1"> <label>Histórico de Reservas Atendidas</label><br/>
+		<INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2"> <label>Relatório de Reservas Atuais</label> <br/>
+		<INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1"> <label>Relatório de Equipamentos mais Utilizados</label><br/>
+		<INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2"> <label>Relatório de Ocorrências</label>
+		<br/>
+		<br/>
+		<label>Selecione a Data do Período do Relatório:</label>
+		<p><label>De: </label><input type="text" name="DataInicio" id="Data" maxlength="10" class="CampoData" />		
+		<label>Até: </label><input type="text" name="DataFim" id="Data" maxlength="10" class="CampoData" /></p>
+		<p>
+			<input type="button" value="Gerar Relatório" class="botao"/>
+			<input type="button" value="Limpar" class="botao"/>
+		</p>
+	</body>
+</html>

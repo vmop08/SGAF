@@ -1,0 +1,191 @@
+.campoPequeno{
+	width: 70px;	
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.campoMedio{
+	width: 120px;	
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.campoGrande{
+	width: 200px;	
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.campoExtraGrande{
+	width: 300px;
+	font-family: Arial;
+	font-size: 12px;
+}
+.campoMaiusculo{
+	text-transform: uppercase;
+}
+
+.componenteEscondido{
+	display: none;
+}
+.CampoData{
+    font-family: Arial;		
+	width:90px;
+	
+    }
+
+/*div ou p*/
+.mensagemErro{
+	color: black;
+	border-color: #B22222;
+	background-color: #E9967A;
+	padding: 10px;
+}
+
+/*div ou p*/
+.mensagemSucesso{
+	color: black;
+	border-color: #006400;
+	background-color: #8FBC8F;
+	padding: 10px;
+}
+ul {
+	font: normal 12px Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 180px; /* Width of Menu Items */
+	border-bottom: 1px solid #ccc;
+	}
+
+ul li {
+	position:relative;
+	}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: #004276;
+	background: #fff; /* IE6 Bug */
+	padding: 10px 5px 10px 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	font-weight: bold;
+
+	}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; }
+/* End */
+
+ul li a:hover { 
+	color: #CC0000; 
+	background:#fff;
+	
+	}
+	/* Hover Styles */
+
+ul ul {
+	position:absolute;
+	display:none;
+	left: 179px; /* Set 1px less than menu width */
+	top: 0;
+
+}
+
+ul ul li{
+	border-right:0;
+	border-left:0;
+}
+
+li ul li a { padding: 2px 5px; } /* Sub Menu Styles */
+
+li:hover ul ul, li.over ul ul { display:none; }
+
+li:hover ul, li li:hover ul, li.over ul, li li.over ul { display: block; } /* The magic */
+
+#topo{
+	height:100px;
+	border:1px dashed #DCDCDC;
+	background-color: #DCDCDC;
+}
+/*FORMULARIO*/
+
+label{
+	font-family: arial;
+	color: #000;	
+	font-size: 12px;
+}
+
+form input{
+	font-size: 12px;
+}
+h1{
+color: #004276;
+font-family: Arial,sans-serif;
+font-size: 18px;
+padding: 3px 0 5px 0;
+border-bottom:#CC0000; 
+}
+
+.botao{
+	padding: 3px;
+	font-weight: bold;
+	color: #004276;
+	background-color:#dcdcdc;
+	font: bold 12px Arial,sans-serif;
+}
+.botao:hover{
+	color: #cc0000;
+	cursor: pointer;
+}
+.tabelaFormulario td{
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+.tabelaPesquisa{
+	font-family: arial;
+	padding: 5px;	
+}
+
+.tabelaPesquisa td{
+	padding: 5px;
+	border: solid 1px;
+	font-size: 12px;
+}
+
+.tabelaPesquisa tr{
+	border: 1px solid;
+}
+.tabelaPesquisa thead td{
+	color: #004276;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #dcdcdc;
+}
+#menu{
+	float: left;
+}
+#conteudo{
+	float: left;
+}
+#conteudoLogin{
+	float: center;
+}
+.botaoPequeno{
+	font-size: 10px;
+	width: 5px;
+	background-color: #dcdcdc;
+
+}
+#logo{
+	color: #004276;
+	font-size: 30px;
+	font-family: arial;
+}
+#boasvindas{
+	font-size: 14px;
+	color: #004276;
+}

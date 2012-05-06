@@ -1,0 +1,81 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="conteudo">
+		<h1><p align="left">Consulta de Reservas para Eventos</h1>
+		<table>
+			<tr>
+				<td><label>Nome do Evento:</label></td>
+				<td><input type="text" name="Evento" id="Evento" class="campoExtraGrande"/></td>
+			</tr>
+			<tr>
+				<td><label>Professor:</label></td>
+				<td><input type="text" name="professor" id="professor" class="campoGrande"/></td>
+			</tr>
+			<tr>
+				<td><label>Equipamento:</label></td>
+				<td><select><option value="1">Projetor</option></select></td>
+			</tr>
+			<tr>
+				<td><label>Sala:</label></td>
+				<td><select><option value="1">Auditório</option></select></td>
+			</tr>
+			<tr>
+				<td><label>Data:</label></td>
+				<td><input type="text" name="data" id="data" class="CampoData"/></td>
+			</tr>
+		</table>
+		<p>
+			<input type="button" class="botao" value="Pesquisar" />
+			<input type="button" class="botao" value="Limpar" />
+			<input type="button" value="Efetuar Reserva para Evento" class="botao" onclick="javascript:window.open('CadastrarReservaEVENTOS.html', '_parent');"/>
+		</p>
+		<br/>
+		
+		<label>Resultado da Pesquisa:</label>
+			
+		<table class="tabelaPesquisa" border="1">
+			<thead>
+			<tr>
+				<td>Evento</td>
+				<td>Professor</td>
+				<td>Equipamento</td>
+				<td>Sala</td>
+				<td>Data</td>
+				<td>Alterar</td>
+				<td>Excluir</td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Palestra</td>
+				<td>Rodrigo Richard</td>
+				<td>Notebook</td>
+				<td>303</td>
+				<td>12/03/2012</td>
+				<td align="center"><input type="button" class="botaoPequeno" value="A"/></td>
+				<td align="center"><input type="button" class="botaoPequeno" value="X"/></td>
+			</tr>
+			<tr>
+				<td>WorkShop</td>
+				<td>Bernardo</td>
+				<td>Projetor</td>
+				<td>300</td>
+				<td>15/03/2012</td>
+				<td align="center"><input type="button" class="botaoPequeno" value="A"/></td>
+				<td align="center"><input type="button" class="botaoPequeno" value="X"/></td>
+			</tr>
+			</tbody>
+		</table>
+		</body>
+	</div>
+</html>

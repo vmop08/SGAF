@@ -1,0 +1,43 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="conteudo">
+		<h1><p align="left">Cadastrar Reservas para Evento</h1>
+		
+		<table class="tabelaFormulario">
+		<tr>
+		<td><label>Nome do Evento:</label></td>
+		<td><input type="text" name="Evento" id="Evento" class="campoGrande"/></td>
+		</tr>
+		<tr>
+		<td><label>Professor:</label></td>
+		<td><input type="text" name="professor" id="professor" class="campoGrande"/></td>
+		</tr>
+		<tr>
+		<td><label>Equipamento:</label></td>
+		<td><select><option value="1">Projetor</option></select></td>
+		</tr>
+		<tr>
+		<td><label>Sala:</label></td>		
+		<td><select><option value="1">A</option></select></td>
+		</tr>
+		<td><label>Data:</label></td>
+		<td><input type="text" name="Data" id="Data" maxlength="10" class="CampoData" /></td>
+		</table>
+		<p>
+		    <input type="button" value="Gravar" class="botao"/> 
+			<input type="button" value="Limpar" class="botao"/> 
+			<input type="button" value="Cancelar" class="botao" onclick="javascript:window.open('ConsultaReservaEventos.html', '_parent');"/>
+		</p>
+	</body>
+	</div>
+</html>

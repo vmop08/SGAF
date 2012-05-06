@@ -1,0 +1,47 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="conteudo">
+		<h1>Cadastrar Equipamento<h1>
+		<form>
+			<table class="tabelaFormulario">
+				<tr>
+					<td><label>Código do Patrimônio: </label></td>
+					<td><input type="text" class="campoMedio"/></input>
+					<td><label>Descrição: </label></td>
+					<td><input type="text" name="descricao" class="campoGrande"/></td>
+				</tr>
+				<tr>
+					<td><label>Tipo de Equipamento: </label></td>
+					<td><select>
+						<option>TV</option>
+						<option>DVD Player</option>
+						<option>DataShow</option>
+						<option>Notebook</option>
+					</select></td>
+					<td><label>Status: </label></td>
+					<td><input type ="radio" name="status" VALUE="op1"/> 
+						<label>Disponível</label><br/>
+					<input type ="radio" name="status" VALUE="op2"/> 
+						<label>Em Manutenção</label>
+					</td>
+				</tr>
+			</table>
+			<p>
+			<input type="button" class="botao" value="Gravar" />
+			<input type="button" class="botao" value="Limpar" />
+			<input type="button" value="Cancelar" class="botao" onclick="javascript:window.open('ConsultarEquipamentosESalas.html', '_parent');" />
+			</p>
+		</form>
+	</div>
+</body>
+</html>

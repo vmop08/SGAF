@@ -1,0 +1,73 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500"  scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="conteudo">
+	
+		<h1><p align="left">Cadastrar Reserva</p></h1>
+	 <table class="tabelaFormulario">
+		<tr>
+		<td><label>Turma:</label></td>
+		<td><select>
+			<option value="A"></option>
+			<option value="B">5P2012</option>
+			<option value="C">6P2012</option>
+			</select></td>
+		<td><label>Disciplina:</label></td>
+		<td><select>
+			<option value="A"></option>
+			<option value="Redes">Redes</option>
+			<option value="IA">Inteligência Artificial</option>
+			</select></td>
+		</tr>
+		
+		<tr>
+		<td><label>Sala:</label></td>
+		<td>
+			<select>
+				<option value="A"></option>
+				<option value="201">201</option>
+			</select>
+		</td>	
+		<td><label>Equipamento:</label></td>
+		<td>
+			<select>			
+				<option value="A"></option>
+				<option value="Projetor">Projetor</option>
+				<option value="Note">Notebook DELL</option>
+			</select>
+		</td>
+		</tr>
+			
+		<tr>	
+		<td><label>Data:</label></td>
+		<td><select>
+			<option value="A"></option>
+			<option value="23/04/2012">23/04/2012</option>
+			</select>
+			</td>			
+		<td><label>Horário:</label></td>
+		<td><select>
+			<option value="A"></option>
+			<option value="19:00">19:00</option>
+			</select>
+		</td>
+		</tr>
+		
+	 </table>
+		<p>
+			<input type="button" class="botao" value="Gravar" />
+			<input type="button" class="botao" value="Limpar" />
+			<input type="button" class="botao" value="Cancelar" onclick="javascript:window.open('ConsultaReserva.html', '_parent');" />
+		</p>
+		</div>
+	</body>
+</html>

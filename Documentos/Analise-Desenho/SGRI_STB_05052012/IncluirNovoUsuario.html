@@ -1,0 +1,53 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	
+	
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500"  scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	
+	<div id="conteudo">
+		<h1>Cadastrar Usuário</h1>
+		<form>
+			<table class="tabelaFormulario">
+				<tr>
+				<td><label>Nome:</label></td>
+				<td><input type="text" name="nome" class="campoExtraGrande" /></td>
+				<td></td>
+				<td></td>					
+				</tr>				
+				<tr>
+				<td><label>Email:</label></td>
+				<td><input type="text" name="email" class="campoExtraGrande" /></td>
+				<td><label>Login:</label></td>
+				<td><input type="text" name="login" class="campoGrande"/></td>
+				</tr>
+				<tr>
+				<td><label>Cargo</label>
+				<td><select>
+					<option>Professor</option>
+					<option>Funcionário Infra</option>				
+					<option>Coordenador</option>
+					</select></td>
+				</td>
+				<td></td>
+				<td></td>	
+				</tr>
+			</table>
+			<p>
+				<input type="button" class="botao" value="Gravar" />
+				<input type="button" class="botao" value="Limpar" />
+				<input type="button" value="Cancelar" class="botao" onclick="javascript:window.open('ConsultarUsuario.html', '_parent');" />
+			</p>
+		</form>
+		</div>
+</body>
+</html>

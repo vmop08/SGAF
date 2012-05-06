@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE doc[
+<!ELEMENT funcionario(coordenador,professor,cod,nome,email,disciplina(nomedisc,codisc)*)>
+<!ELEMENT coordenador(#PCDATA)>
+<!ElEMENT cod(#PCDATA)>
+<!ELEMENT nome(#PCDATA)>
+<!ELEMENT email(#PCDATA)>
+<!ELEMENT disciplina(#PCDATA)>
+<!ELEMENT nomedisc(#PCDATA)>
+<!ELEMENT codisc(#PCDATA)>
+]>
+<doc>
+<funcionario>
+  <coordenador>F</>
+  <professor>T</>
+  <cod>001</>
+  <nome>Manoel</>
+  <email>manoel@colegio.com.br</>
+  <disciplina>
+    <nomedisc>Banco de dados</>
+    <codisc>0001</></>
+  <disciplina>
+    <nomedisc>Gerencia de Bando de Dados</>
+    <codisc>0002</></>
+  <disciplina>
+    <nomedisc>Laboratório de Banco de Dados</>
+    <codisc>0003</></>
+</funcionario>
+
+<funcionario>
+<coordenador>F</>
+<professor>T</>
+<cod>002</>
+<nome>Eliane</>
+<email>eliane@colegio.com.br</>
+<disciplina>
+<nomedisc>Computadores e Sociedade</>
+<codisc>0004</></>
+<disciplina>
+<nomedisc>Fundamentos de SI</>
+<codisc>0005</></>
+</funcionario>
+
+<funcinario>
+<coordenador>T</>
+<professor>T</>
+<cod>003</>
+<nome>Saulo</>
+<email>saulo@colegio.com.br</>
+<disciplina>
+<nomedisc>Algortimo e Técnicas de Programação</>
+<codisc>0006</></>
+<disciplina>
+<nomedisc>Matemática Discreta</>
+<codisc>0007</></>
+<disciplina>
+<nomedisc>Inteligencia Artificial>
+<codisc>0008</></>
+<disciplina>
+<nomedisc>Projeto de Algoritmo</>
+<codisc>0009</></>
+
+</doc>

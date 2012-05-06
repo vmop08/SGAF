@@ -1,0 +1,57 @@
+Trabalho Integrado - SGRI - 1ª Entrega - Abril/2012
+
+Participantes do Grupo:
+
+5º Período:
+Fernanda Bonfat
+Flávio Oliveira
+Jovino César
+Késsia Gonçalves
+
+
+
+
+==========Tecnologias utilizadas==========
+
+- Astash UML e StarUML - Desenho de diagramas.
+- Linguagem Java EE - IDE Eclipse Indigo
+- Framework de integração JSF 1.2
+- JSP
+- Servidor de aplicações TomCat
+- SGBD MySQL
+Não foi utilizado ORM nessa primeira fase do projeto.
+
+
+==========Requisitos necessários para a execução do sistema==========
+
+- Instalação do MySQL (http://dev.mysql.com/downloads/)
+- Instalação do Tomcat 6.0 (http://tomcat.apache.org/download-60.cgi)
+- O arquivo "sgri_novo.war" disponibilizado no DropBox deverá ser colocado na seguinte pasta:
+	[instalação do tomcat]/webapps
+- O arquivo "sgri_novo.war" deve ser aberto com o sistema WinRAR para que os arquivos possam ser descompactos
+e visualizados.
+
+
+
+==========Script de criação das tabelas Utilizadas==========
+
+CREATE TABLE  `sgri`.`sg_sala` (
+  `COD_SALA` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `DESC_SALA` varchar(45) NOT NULL,
+  `LOCALIZACAO_SALA` varchar(45) NOT NULL,
+  `CAPACIDADE` int(10) unsigned NOT NULL,
+  `TIPO_SALA` varchar(45) NOT NULL,
+  `OBSERVACAO` varchar(45) CHARACTER SET latin1 COLLATE latin1_bin DEFAULT NULL,
+  PRIMARY KEY (`COD_SALA`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+
+
+CREATE TABLE  `sgri`.`sg_equipamento` (
+  `COD_EQUIPAMENTO` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `COD_PATRIMONIO` int(10) unsigned NOT NULL,
+  `DESC_EQUIPAMENTO` varchar(60) NOT NULL,
+  `STATUS_EQUIPAMENTO` int(10) unsigned NOT NULL,
+  `TIPO_EQUIPAMENTO` varchar(45) NOT NULL,
+  PRIMARY KEY (`COD_EQUIPAMENTO`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;

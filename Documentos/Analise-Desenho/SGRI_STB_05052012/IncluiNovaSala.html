@@ -1,0 +1,50 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	<div id="conteudo">
+	
+		<h1>Cadastrar Sala<h1>
+		<form method="post">
+		<table class="tabelaFormulario">
+			<tr>
+			<td><label>Descrição da Sala: </label></td>
+			<td><input type="text" name="descricao" class="campoGrande"/></td>
+			<td><label>Tipo de Sala: </label></td>
+			<td>
+				<select>
+				<option>Sala de Aula</option>
+				<option>Laboratório</option>
+				<option>Multimeios</option>
+				<option>Auditório</option>
+				</select>
+			</td>
+			</tr>
+			<tr>
+			<td><label>Localização da Sala: </label></td>
+			<td><input type="text" name="localizacao" class="campoMedio"/></td>
+			<td><label>Capacidade da Sala: </label></td>
+			<td><input type="text" name="capacidade" class="campoPequeno"/></td>
+			</tr>
+			<tr>
+			<td><label>Observações: </label></td>
+			<td><textarea cols="20" rows="3" name="obs"></textarea></td>
+			</tr>
+		</table>
+		<p>
+			<input type="button" class="botao" value="Gravar" />
+			<input type="button" class="botao" value="Limpar" />
+			<input type="button" value="Cancelar" class="botao" onclick="javascript:window.open('ConsultarEquipamentosESalas.html', '_parent');" />
+		</p>
+		</form>
+	</div>
+	</body>
+</html>

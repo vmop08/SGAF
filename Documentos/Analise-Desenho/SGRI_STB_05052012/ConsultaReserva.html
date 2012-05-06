@@ -1,0 +1,93 @@
+
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	
+	
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	
+	<div id="conteudo">
+	
+	<h1><p align="left">Consulta de Reserva</p></h1>
+		<table class="tabelaFormulario">
+		<tr>
+		<td><label>Professor:</label></td>
+		<td><input type="text" name="professor" id="professor" class="campoGrande"/></td>
+		<td><label>Disciplina:</label></td>
+		<td><input type="text" name="disciplina" id="disciplina" class="campoMedio"/></td>
+		</tr>
+		
+		<tr>
+		<td><label>Sala:</label></td>
+		<td><input type="text" name="sala" id="sala" class="campoMedio"/></td>	
+		<td><label>Equipamento:</label></td>
+		<td><input type="text" name="Equipamento" id="Equipamento" class="campoMedio"/></td>
+		</tr>
+			
+		<tr>	
+		<td><label>Data:</label></td>
+		<td><input type="text" name="data" id="data" class="campoMedio"/></td>			
+		<td><label>Horário:</label></td>
+		<td><input type="text" name="data" id="data" class="campoMedio"/></td>
+		</tr>
+		
+		</table>
+		<p>
+			<input type="button" class="botao" value="Pesquisar" />
+			<input type="button" class="botao" value="Limpar" />
+			<input type="button" value="Efetuar Reserva" class="botao"  onclick="javascript:window.open('CadastrarReserva.html', '_parent');"/>
+		
+		</p>
+		<br/>
+		
+		<label>Resultado da Pesquisa:</label>
+			
+		<table class="tabelaPesquisa" border="1">
+			<thead>
+			<tr>
+				<td>Professor</td>
+				<td>Disciplina</td>
+				<td>Equipamento</td>
+				<td>Sala</td>
+				<td>Data</td>
+				<td>Horário</td>
+				<td>Alterar</td>
+				<td>Excluir</td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Saulo</td>
+				<td>IA</td>
+				<td>Notebook</td>
+				<td>303</td>
+				<td>12/03/2012</td>
+				<td>19:00</td>
+				<td align="center"><input type="button" class="botaoPequeno"value="A"/></td>
+				<td align="center"><input type="button" class="botaoPequeno" value="X"/></td>
+			</tr>
+			<tr>
+				<td>Hadad</td>
+				<td>AOC</td>
+				<td>Projetor</td>
+				<td>300</td>
+				<td>15/03/2012</td>
+				<td>21:00</td>
+				<td align="center"><input type="button" class="botaoPequeno"value="A"/></td>
+				<td align="center"><input type="button" class="botaoPequeno" value="X"/></td>
+			</tr>
+			</tbody>
+		</table>
+		
+		</div>
+	</body>
+</html>

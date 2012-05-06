@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE doc[
+<!ELEMENT turma(codturma,turno,periodo,codcurso)+>
+<!ELEMENT codturma(#PCDATA)>
+<!ELEMENT turno(#PCDATA)>
+<!ELEMENT periodo(#PCDATA)>
+<!ELEMENT codcurso(#PCDATA)>
+<!ELEMENT curso(codcurso,nomecurso,disciplina+)+>
+<!ELEMENT nomecurso(#PCDATA)>
+<!ELEMENT disciplina(nomedisc,codisc)>
+<!ELEMENT nomedisc(#PCDATA)>
+<!ELEMENt codisc(#PCDATA)>
+]>
+<doc>
+
+<turma>
+<codturma>100</>
+<turno>noite</>
+<periodo>quinto</>
+<codcurso>123</>
+</turma>
+
+<turma>
+<codturma>101</>
+<turno>manha</>
+<periodo>segundo</>
+<codcurso>124</>
+</turma>
+
+<curso>
+<codcurso>123</>
+<nomecurso>sistemas de informaçao</>
+<disciplina>
+<nomedisc>projeto de algoritmo<nomedisc>
+<codisc>0009</>
+</disciplina>
+<disciplina>
+<nomedisc>inteligencia artificial</>
+<codisc>0008</></>
+</curso>
+
+<curso>
+<codcurso>124</>
+<nomecurso>nutrição</>
+<disciplina>nutri1</>
+<codisc>0010</></>
+</curso>
+
+<disciplina>
+<codisc>0009</>
+<nomedisc>projeto de algoritmo</>
+<codprofessor>RG professor</></>
+
+<disciplina>
+<codisc>0010</>
+<nomedisc>nutri1</>
+<codprofessor>RG professor</></>
+
+<sala>
+<codsala>CodSala</>
+<tiposala>laboratorio</></>
+
+<sala>
+<codsala>CodSalaII</>
+<tiposala>sala de aula</></>
+
+</>

@@ -1,0 +1,72 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	
+	
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500"  scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	
+	<div id="conteudo">
+		<h1>Consultar Usuários</h1>
+		<form>
+			<table class="tabelaFormulario">
+			<tr>
+				<td><label>Nome:</label></td>
+				<td><input type="text" /></td>
+			</tr>
+			<tr>
+				<td><label>Email:</label></td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td><label>Login:</label></td>
+				<td><input type="text"/></td>
+			</tr>
+			</table>
+			<p>
+				<input type="button" class="botao" value="Pesquisar" />
+				<input type="button" class="botao" value="Limpar" />
+				<input type="button" value="Novo Usuário" class="botao" onclick="javascript:window.open('IncluirNovoUsuario.html', '_parent');" />
+			</p>
+		</form>
+		<br/>
+		<label>Resultado da Pesquisa:</label>
+			
+		<table class="tabelaPesquisa" border="1">
+			<thead>
+			<tr>
+				<td>Nome: </td>
+				<td>E-mail: </td>
+				<td>Login</td>
+				<td>Alterar</td>
+				<td>Excluir</td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Saulo</td>
+				<td>saulo@pucminas.br</td>
+				<td>saulo</td>
+				<td align="center"><input type="button" class="botaoPequeno"value="A"/></td>
+				<td align="center"><input type="button" class="botaoPequeno" value="X"/></td>
+			</tr>
+			<tr>
+				<td>Hadad</td>
+				<td>renatohadad@pucminas</td>
+				<td>hadad</td>
+				<td align="center"><input type="button" class="botaoPequeno"value="A"/></td>
+				<td align="center"><input type="button" class="botaoPequeno" value="X"/></td>
+			</tr>
+			</tbody>
+		</table>
+		</div>
+	</body>
+</html>

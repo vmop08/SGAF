@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<meta name="language" content="pt-br" />
+			<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	
+	<div id="topo">
+		<IFRAME src="topo.html" width="100%" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	
+	
+	<div id="menu">
+		<IFRAME src="menu.html" width="250" height="500" scrolling="no" frameborder="0" align="center"></IFRAME> 
+	</div>
+	
+	<div id="conteudo">		<h1>Pesquisar Ocorrência<h1>		<form>		<table>		<tr>			<td><label>Professor: </label></td>			<td><select class="campoExtraGrande">				<option>Guta</option>				<option>Saulo</option>				<option>Rodrigo</option>				<option>Palhares</option>				</select>			</td>		</tr>		<tr>					<td><label>Data: </label></td>			<td><input type="text" class="campoMedio" value="        \       \   "></input></td>		</tr>		</table>		 <p>
+			<input type="submit" value="Pesquisar" class="botao" id="botaoPesquisar"/>
+			<input type="reset" class="botao" value="Limpar"  class="botao" />
+			<input type="button" value="Nova Ocorrência"  class="botao" onclick="javascript:window.open('CadastrarNovaOcorrencia.html', '_parent');" />
+		</p>		</form>				<br/>
+		<label>Resultado da Pesquisa: </label>
+			
+		<table class="tabelaPesquisa" border="1">
+			<thead>
+			<tr>
+				<td>Professor</td>
+				<td>Data</td>
+				<td>Descrição</td>				<td>Visualizar</td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Guta</td>
+				<td>22/02/2012</td>
+				<td>Equipamento com defeito há 20 dias.</td>				
+				<td align="center"><input type="button" class="botaoPequeno"value="V"/></td>				
+			</tr>
+			<tr>
+				<td>Palhares</td>
+				<td>05/03/2012</td>
+				<td>Equipamento com defeitos.</td>				
+				<td align="center"><input type="button" class="botaoPequeno"value="V"/></td>				
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
